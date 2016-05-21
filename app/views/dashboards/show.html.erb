@@ -1,0 +1,13 @@
+<h1>My Dashboard</h1>
+
+<%= form_for @text_shout do |f| %>
+  <%= f.text_field :body, placeholder: 'Enter shout content here...' %>
+  <%= f.submit 'Shout' %>
+<% end %>
+
+<%= form_for @photo_shout do |f| %>
+  <%= f.file_field :image %>
+  <%= f.submit %>
+<% end %>
+
+<%= render @shouts %>
